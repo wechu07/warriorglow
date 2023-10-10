@@ -39,6 +39,10 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.get("/donate", (req, res) => {
+  res.render("donate");
+});
+
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
