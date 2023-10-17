@@ -1,12 +1,4 @@
-/*
-
-TemplateMo 581 Kind Heart Charity
-
-https://templatemo.com/tm-581-kind-heart-charity
-
-*/
-
-
+/* Warrior Glow */
 
 @font-face {
     font-family: 'Metropolis';
@@ -49,10 +41,10 @@ https://templatemo.com/tm-581-kind-heart-charity
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #79874e;
-  --secondary-color:              #394618;
+  --primary-color:                #d8c690;
+  --secondary-color:              #042324;
   --section-bg-color:             #f0f8ff;
-  --site-footer-bg-color:         #040404;
+  --site-footer-bg-color:         #256464;
   --custom-btn-bg-color:          #7c7c84;
   --custom-btn-bg-hover-color:    #681818;
   --dark-color:                   #000000;
@@ -542,6 +534,19 @@ strong {
 .navbar-toggler .navbar-toggler-icon::after {
   top: 8px;
 }
+
+/* --cream:                        #fdf9e4;
+--beige:                        #d8c690;
+--gold:                         #CBB26A;
+--first-green:                  #107b7e;
+--second-green:                 #0A4F51;
+--third-green:                  #042324; */
+
+.navbar-custom {
+  background: linear-gradient(to right, #256464, #fdf9e4);
+  /* Replace the color codes with the desired gradient colors. */
+}
+
 
 
 /*---------------------------------------
