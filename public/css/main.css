@@ -45,8 +45,8 @@
   --secondary-color:              #042324;
   --section-bg-color:             #f0f8ff;
   --site-footer-bg-color:         #256464;
-  --custom-btn-bg-color:          #7c7c84;
-  --custom-btn-bg-hover-color:    #681818;
+  --custom-btn-bg-color:          #fdf9e4;
+  --custom-btn-bg-hover-color:    #CBB26A;
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #e9eaeb;
@@ -286,6 +286,10 @@ strong {
   padding: 40px;
 }
 
+.custom-text-box h5{
+  color: var(--second-green);
+}
+
 .custom-text-box-image {
   border-radius: var(--border-radius-medium);
   width: 100%;
@@ -387,7 +391,7 @@ strong {
 }
 
 .logo {
-  width: 80px;
+  width: 130px;
   height: auto;
 }
 
@@ -399,9 +403,9 @@ strong {
 
 .navbar-nav .nav-link {
   display: inline-block;
-  color: var(--p-color);
+  color: var(--cream);
   font-size: var(--p-font-size);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-bold);
   position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -410,7 +414,7 @@ strong {
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover {
   background: transparent;
-  color: var(--primary-color);
+  color: var(--gold);
 }
 
 .dropdown-menu {
@@ -543,8 +547,8 @@ strong {
 --third-green:                  #042324; */
 
 .navbar-custom {
-  background: linear-gradient(to right, #256464, #fdf9e4);
-  /* Replace the color codes with the desired gradient colors. */
+  /* background: linear-gradient(to right, #256464, #fdf9e4); */
+  background: #256464;
 }
 
 
@@ -553,7 +557,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background: var(--primary-color);
+  background: var(--third-green);
   padding-top: 15px;
   padding-bottom: 10px;
 }
@@ -697,6 +701,16 @@ strong {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.about-section .custom-btn {
+  color: var(--custom-btn-bg-color);
+  background: var(--third-green);
+}
+
+.about-section .custom-btn:hover {
+  background: var(--gold);
+  color: var(--white-color);
 }
 
 .about-image {
@@ -1318,7 +1332,7 @@ blockquote::before {
 }
 
 .custom-form button[type="submit"] {
-  background: var(--custom-btn-bg-color);
+  background: var(--third-green);
   border: none;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
@@ -1330,7 +1344,7 @@ blockquote::before {
 
 .custom-form button[type="submit"]:hover,
 .custom-form button[type="submit"]:focus {
-  background: var(--custom-btn-bg-hover-color);
+  background: var(--gold);
   border-color: transparent;
 }
 

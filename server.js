@@ -43,6 +43,14 @@ app.get("/donate", (req, res) => {
   res.render("donate");
 });
 
+app.get("/team", (req, res) => {
+  res.render("team");
+});
+
+app.get("/events", (req, res) => {
+  res.render("events");
+});
+
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
