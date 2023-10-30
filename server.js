@@ -9,9 +9,12 @@ const methodOverride = require("method-override");
 const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
 const flash = require("connect-flash");
+const connectDatabase = require("./config/db");
 
 // loading the envariables
 dotenv.config();
+
+connectDatabase();
 
 const app = express();
 
