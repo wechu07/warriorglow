@@ -10,6 +10,8 @@ const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
 const flash = require("connect-flash");
 const connectDatabase = require("./config/db");
+const navigationRoutes = require("./src/routes/navigationRoutes");
+const eventRoutes = require("./src/routes/eventRoutes");
 
 // loading the envariables
 dotenv.config();
@@ -38,20 +40,12 @@ app.use(flash());
 app.use(helmet.contentSecurityPolicy());
 app.use(mongoSanitize());
 
-app.get("/", (req, res) => {
-  res.render("home");
-});
+app.use("/", navigationRoutes);
+app.use("/mail", eventRoutes);
 
-app.get("/donate", (req, res) => {
-  res.render("donate");
-});
-
-app.get("/team", (req, res) => {
-  res.render("team");
-});
-
-app.get("/events", (req, res) => {
-  res.render("events");
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).render('404');
 });
 
 const port = process.env.PORT || 5000;
