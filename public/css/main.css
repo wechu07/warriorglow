@@ -619,6 +619,7 @@ strong {
   display: block;
   width: 100%;
   min-height: 680px;
+  object-fit: cover;
 }
 
 #hero-slide .carousel-indicators-wrap {
@@ -798,7 +799,7 @@ strong {
   DONATE              
 -----------------------------------------*/
 .donate-section {
-  background-image: url('../images/different-people-doing-volunteer-work.jpg');
+  /* background-image: url('../images/different-people-doing-volunteer-work.jpg'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -820,7 +821,7 @@ strong {
   NEWS         
 -----------------------------------------*/
 .news-detail-header-section {
-  background-image: url('../images/news/close-up-volunteer-oganizing-stuff-donation.jpg');
+  background-image: url('https://ik.imagekit.io/tv5sw4xc2r/2nd%20anniversary/DSC_0386_Original.webp?updatedAt=1699517810255');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
