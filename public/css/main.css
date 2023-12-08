@@ -601,9 +601,9 @@ strong {
   min-height: 680px;
 }
 
-#hero-slide .carousel-caption {
+/* #hero-slide .carousel-caption {
   background: var(--white-color);
-  clip-path: polygon(100% 100%, 100% 150px, 0 100%);
+  clip-path: polygon(100% 100%, 100% 50px, 0 100%);
   color: var(--secondary-color);
   top: 1px;
   bottom: -1px;
@@ -613,7 +613,7 @@ strong {
   min-width: 680px;
   min-height: 680px;
   padding: 100px 100px 50px 100px;
-}
+} */
 
 .carousel-image {
   display: block;
