@@ -45,7 +45,7 @@ app.use("/mail", eventRoutes);
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).render('404');
+  res.status(500).render("404");
 });
 
 const port = process.env.PORT || 5000;

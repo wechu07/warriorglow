@@ -5,49 +5,62 @@
             <div class="row">
 
                 <div class="col-lg-6 col-12">
+                    <div class="navigation">
+                        <a href="/login">Login</a>
+                        <a href="/register">Register</a>
+                    </div>
                     <h2 class="text-white mb-4">Add an Event here</h2>
-                    <h4 class="text-white mb-4">Each of the fields is required. To view how an existing event on the website looks like, take a look <a style="color: #c3d47e;" href="/events">here</a></h4>
+                    <h4 class="text-white mb-4">Each of the fields is required. To view how an existing event on the
+                        website looks like, take a look <a style="color: #c3d47e;" href="/events">here</a></h4>
 
-                    <form class="custom-form volunteer-form mb-5 mb-lg-0" action="/add-event" method="post" role="form" enctype="multipart/form-data">
+                    <form class="custom-form volunteer-form mb-5 mb-lg-0" action="/add-event" method="post" role="form"
+                        enctype="multipart/form-data">
                         <h3 class="mb-4">Fill in all</h3>
 
                         <div class="row">
                             <div class="col-lg-6 col-12">
-                                <input type="text" name="title" id="event-title" class="form-control" placeholder="Event Title" required="true">
-                            </div>
-                        
-                            <div class="col-lg-6 col-12">
-                                <input type="date" name="date" id="event-date" class="form-control" placeholder="Event Date" required="true">
+                                <input type="text" name="title" id="event-title" class="form-control"
+                                    placeholder="Event Title" required="true">
                             </div>
 
                             <div class="col-lg-6 col-12">
-                                <input type="text" name="location" id="event-location" class="form-control" placeholder="Event Location" required="true">
+                                <input type="date" name="date" id="event-date" class="form-control"
+                                    placeholder="Event Date" required="true">
                             </div>
-                        
+
+                            <div class="col-lg-6 col-12">
+                                <input type="text" name="location" id="event-location" class="form-control"
+                                    placeholder="Event Location" required="true">
+                            </div>
+
                             <div class="col-12">
-                                <textarea name="description" id="event-description" class="form-control" placeholder="Event Description" rows="4" required="true"></textarea>
+                                <textarea name="description" id="event-description" class="form-control"
+                                    placeholder="Event Description" rows="4" required="true"></textarea>
                             </div>
-                        
+
                             <div class="col-12">
                                 <div class="input-group input-group-file">
                                     <input type="file" class="form-control" id="event-image-1">
-                                    <label class="input-group-text" for="event-image-1">Upload First Display Image</label>
+                                    <label class="input-group-text" for="event-image-1">Upload First Display
+                                        Image</label>
                                     <i class="bi-cloud-arrow-up ms-auto"></i>
                                 </div>
                             </div>
-                        
+
                             <div class="col-12">
                                 <div class="input-group input-group-file">
                                     <input type="file" class="form-control" id="event-image-2">
-                                    <label class="input-group-text" for="event-image-2">Upload Second Display Image</label>
+                                    <label class="input-group-text" for="event-image-2">Upload Second Display
+                                        Image</label>
                                     <i class="bi-cloud-arrow-up ms-auto"></i>
                                 </div>
                             </div>
-                        
+
                             <div class="col-12">
                                 <div class="input-group input-group-file">
                                     <input type="file" class="form-control" id="event-image-3">
-                                    <label class="input-group-text" for="event-image-3">Upload Third Display Image</label>
+                                    <label class="input-group-text" for="event-image-3">Upload Third Display
+                                        Image</label>
                                     <i class="bi-cloud-arrow-up ms-auto"></i>
                                 </div>
                             </div>
