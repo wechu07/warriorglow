@@ -24,6 +24,18 @@ router.get("/events", (req, res) => {
   renderPage(res, "events");
 });
 
+router.get("/events/camp", (req, res) => {
+  renderPage(res, "camp");
+});
+
+router.get("/events/pilot", (req, res) => {
+  renderPage(res, "pilot");
+});
+
+router.get("/events/second", (req, res) => {
+  renderPage(res, "second");
+});
+
 router.get("/add-event", (req, res) => {
   renderPage(res, "add-event");
 });
